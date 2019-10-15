@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    services:
+      registrationMethod: router
+  zipkin:
+    baseUrl: http://zipkin-server/
+    sender:
+      type: web
+eureka:
+  instance:
+     nonSecurePort: 80

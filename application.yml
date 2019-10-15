@@ -1,0 +1,25 @@
+ribbon:
+  IsSecure: true
+pivotal:
+  quotesService:
+    name: quotes-service
+  userService:
+    name: user-service
+  accountsService:
+    name: accounts-service
+  portfolioService:
+    name: portfolio-service
+  analyticsService:
+    name: analytics-service
+logging:
+  level:
+     io:
+        pivotal: DEBUG
+     com:
+        netflix: FATAL
+     org:
+        springframework:
+           web:
+             client:
+               RestTemplate: TRACE
+           cloud: INFO
