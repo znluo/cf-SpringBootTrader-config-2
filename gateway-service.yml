@@ -35,9 +35,8 @@ spring:
         - Path=/analytics/**
         filters:
         - RewritePath=/analytics/(?<path>.*), /$\{path}
-
 management:
   endpoints:
     web:
       exposure:
-        include: gateway
+        include: "gateway"
